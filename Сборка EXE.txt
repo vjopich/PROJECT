@@ -1,0 +1,9 @@
+﻿### проверялось на Python 3.7.0
+
+### установка библиотек
+pip install gpxpy simplekml geographiclib pyreadline lxml pywin32 pyinstaller
+
+### сборка
+pyinstaller main.spec
+или
+pyinstaller main.py
