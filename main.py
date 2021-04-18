@@ -12,7 +12,7 @@ angle = float(input('Введите угол к земле, в градусах 
 height = float(input('Введите высоту над землей (=50): ') or 50)
 export = input('Введите имя выходного файла (=имя входного + расширение): ') or inp.replace('.gpx', '.kml')
 
-def getDistance(p1, p2): # получение расстояния. Copyright (c) StackOverflow.com
+def getDistance(p1, p2): # получение расстояния. 
 	R = 6373.0
 	dlon = p1['lo'] - p2['lo']
 	dlat = p1['la'] - p2['la']
