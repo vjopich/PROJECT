@@ -43,7 +43,7 @@ for track in tracks:
 	for i in range(len(track['points'])):
 		point = track['points'][i]
 
-		pnt = t.newgxcoord([(point['lo'], point['la'])]) # точка следа. Широта и долгота наоборот?
+		pnt = t.newgxcoord([(point['lo'], point['la'])]) # точка следа
 
 		dst, bearing = 1, 0
 		if i != len(track['points']) - 1:
