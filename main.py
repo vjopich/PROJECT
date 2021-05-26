@@ -7,9 +7,9 @@ from math import sin, cos, atan2, sqrt, degrees
 # kmps = 10
 # inp = '2_brata.gpx'#'sample-gpx/RoscoffCoastal/Lannion_Plestin_parcours24.4RE.gpx'
 inp = input('Введите полное имя входного файла: ')
-kmps = float(input('Введите скорость, км/с (=1): ') or 1)
+kmps = float(input('Введите скорость, м/с (=1): ') or 1)
 angle = float(input('Введите угол к земле, в градусах (=80): ') or 80)
-height = float(input('Введите высоту над землей (=50): ') or 50)
+height = float(input('Введите высоту над землей, м (=50): ') or 50)
 export = input('Введите имя выходного файла (=имя входного + расширение): ') or inp.replace('.gpx', '.kml')
 
 def getDistance(p1, p2): # получение расстояния. 
@@ -45,7 +45,7 @@ for track in tracks:
 
 		pnt = t.newgxcoord([(point['lo'], point['la'])]) # точка следа
 
-		dst, bearing = 1, 0
+		dst, be aring = 1, 0
 		if i != len(track['points']) - 1:
 			npoint = track['points'][i + 1]
 			dst = getDistance(point, npoint)
